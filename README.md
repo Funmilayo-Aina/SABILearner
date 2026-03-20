@@ -1,13 +1,13 @@
 # SABILearner
 ## Intelligent Adaptive AI Tutor for Young Learners
  A Web Based App that teaches numeracy and help support early reading skills for younger learners.
- MVP(Teaches Numeracy)
- Can work on low end devices
- Asks questions
- Tracks learning
- Adjusts to support individual learners differences. 
+ - MVP(Teaches Numeracy)
+ - Can work on low end devices
+ - Asks questions
+ - Tracks learning
+ - Adjusts to support individual learners differences. 
  ## Decription 
- A multi-skill Bayesian Knowledge Tracing system that dynamically models learner proficiency across multiple arithmetic domains. The system prioritizes weaker skills and adapts task difficulty accordingly, enabling personalized and efficient learning in low-resource environments.
+ A multi-skill Bayesian Knowledge Tracing system that dynamically models learner proficiency across multiple arithmetic domains. The system prioritizes weaker skills and adapts task difficulty accordingly, enabling personalized and efficient learning in low-resource environments. This Project is at it's MVP Stage
 
 ### TOOLS AND TECHNOLOGIES
 FRONT END: HTML, CSS, Javascript
