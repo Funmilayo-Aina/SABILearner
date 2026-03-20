@@ -6,6 +6,8 @@
  Asks questions
  Tracks learning
  Adjusts to support individual learners differences. 
+ ## Decription 
+ A multi-skill Bayesian Knowledge Tracing system that dynamically models learner proficiency across multiple arithmetic domains. The system prioritizes weaker skills and adapts task difficulty accordingly, enabling personalized and efficient learning in low-resource environments.
 
 ### TOOLS AND TECHNOLOGIES
 FRONT END: HTML, CSS, Javascript
@@ -17,5 +19,16 @@ Convert CLI → AI backend logic (Flask-ready)
 
 Add Bayesian Knowledge Tracing (BKT)
 
-Make it adaptive, stateful, and explainabl
+Make it adaptive, stateful, and explainable
+Use your MULTI_SKILL_KNOWLEDGE_COMPONENTS
 
+Track each skill independently
+
+Apply BKT updates per skill
+
+Generate adaptive question
+.......
+4 skills tracked independently
+✅ Weakest skill targeted
+✅ Difficulty adapts per skill
+✅ Learning history stored

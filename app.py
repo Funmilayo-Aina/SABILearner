@@ -1,19 +1,21 @@
 from flask import Flask, jsonify,request
-from model import get_question, check_answer
+from model import generate_question, check_answer,history
+
 app = Flask(__name__)
 
 @app.route('/question', methods=['GET'])
 def question():
-    return jsonify(get_question())
+    return jsonify(generate_question())
 
-@app.route('/answer', methods=['POST'])
+@app.route("/answer", methods=["POST"])
 def answer():
-    data = request.get_json()
-    is_correct, feedback = check_answer(data['answer'])
-    return jsonify({
-        'is_correct': is_correct,
-        'feedback': feedback
-    })
+    data = request.json
+    result = check_answer(data["answer"])
+    return jsonify(result)
 
-if __name__ == '__main__':
+@app.route("/progress", methods=["GET"])
+def progress():
+    return jsonify(history)
+
+if __name__ == "__main__":
     app.run(debug=True)
