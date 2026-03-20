@@ -15,7 +15,7 @@ Backend : Flask API(MVP)
 Adaptive AI Model (Logic)
 
 ### TASKS:
-Convert CLI → AI backend logic (Flask-ready)
+Convert CLI (AI backend logic (Flask-ready))
 
 Add Bayesian Knowledge Tracing (BKT)
 
@@ -28,7 +28,7 @@ Apply BKT updates per skill
 
 Generate adaptive question
 .......
-4 skills tracked independently
-✅ Weakest skill targeted
-✅ Difficulty adapts per skill
-✅ Learning history stored
+- 4 skills tracked independently
+- Weakest skill targeted
+- Difficulty adapts per skill
+- Learning history stored
