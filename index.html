@@ -9,21 +9,47 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to SABI Learner</h1>
+        <h1>SABI Learner</h1>
     </header>
     <main>
+        <!--learning section -->
+
         <section>
             <h2>About SABI Learner</h2>
             <p>SABI Learner is an intelligent adaptive learning platform designed to provide personalized learning experiences for young learners.</p>
-        </section>
-        <p id = "question"></p>
+        
+        <p id = "question"> Start</p>
         <input type="number" id="answer" placeholder="Type your answer here">
-        <button onclick="checkAnswer()">Submit</button>
+        
+        <div class="buttons">
+            <button onclick="startSession()">Start Session</button>
+            <button onclick="submitAnswer()">Submit Answer</button>
+        </div>
         <p id="feedback"></p>
-        <script src="script.js"></script>
+
+        <p id="skill"></p>
+        <p id="level"></p>
+        <p id="knowledge"></p>
+        </section>
+          <!--- Learning Progress-->
+            <section>
+                <h2>Learning Progress</h2>
+                <canvas id ="chart"></canvas>
+                <button onclick="loadProgress()">Refresh</button>
+
+             <!-- insight-->
+           <section>
+                <h2>Facilitator Insights</h2>
+                <button onclick="loadInsight()">View Progress</button>
+                <ul id="insightsList"></ul> 
+                <p id="summary"></p> 
+        </section>
+
+        
     </main>
     <footer>
         <p>&copy; 2023 SABI Learner. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
